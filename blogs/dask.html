@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DevTales</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">DevTales</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Parallel computing in Python using Dask</h1>
+            <span class="meta">Category: Development
+              <br>
+              Subcategory: Programming
+              <br>
+              Read Time: 10 Minutes
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+<p>Parallel computing is an architecture in which several processors execute or process an application or computation simultaneously. Parallel computing helps in performing extensive calculations by dividing the workload between more than one processor, all of which work through the calculation simultaneously. The primary goal of parallel computing is to increase available computation power for faster application processing and problem solving. In sequential computing, all the instructions run one after another without overlaping with each other, whereas in parallel computing instructions run in parallel to complete the given task more faster.</p>
+<h3 id="applications-of-parallel-computing">Applications of Parallel Computing</h3>
+<p>Following are some of the applications of parallel computing :</p>
+<ol style="list-style-type: decimal">
+<li>Database and Data Mining</li>
+<li>Extensive Graphics Processing like Video Games, Augmented Reality</li>
+<li>Medical Imaging &amp; Diagnosis</li>
+<li>Web search engines</li>
+<li>Electronic Circuit Design</li>
+</ol>
+<p>Dask is a free and open-source library to achieve parallel computing in Python. It works well with all the popular python libraries like Pandas, Numpy, scikit-learns etc. In pandas, we can't handle very large datasets(unless we have plenty of RAM) because they use a lot of memory. It is not possible to use Pandas or Numpy for our data processing tasks when our data scales. We may try other distributed computing libraries like Apache Spark but those are not written in Python so we won't be able to utlize pandas, numpy or other machine learning libraries. But Dask provides dataframes which can handle large datasets with minimal code changes. Its scalability with our data in terms of processing time or memory usage gives it advantage over other libraries. Dask helps us to utilize the power of distributed computing with seamless integration with other data science libraries like pandas or numpy.</p>
+<h3 id="comparison-to-other-frameworks">Comparison to other frameworks</h3>
+<ol style="list-style-type: decimal">
+<li><p>Dask vs Spark - Spark is a quite popular name in the domain of distributed computing. In comparison to Spark, Dask is light weight and smaller that means it has limited features. one major difference is that Spark is written in Scala and supports python using wrapper library, whereas Dask is written in Python and couples with almost all python libraries for data analysis like pandas, numpy, and scikit-learn. Spark doesn't support for multi-dimentional arrays whereas Dask supports scalable multi-dimentional arrays. Both scale from a single node to thousand-node clusters. If you want to write your project in Python and looking to add machine learning in it then you can go with Dask. If you are a scala or SQL developer, working on JVM infrastructure and doing mostly ETL part then you can go with Spark. In terms of ease of use Dask is far easier to implement than Spark.</p></li>
+<li><p>Dask vs Ray vs Modin - Dask and Ray differ in their scheduling mechanisms. Dask uses a centralized scheduler which handles all tasks for a cluster. Ray is decentralized, that means each machine runs its own scheduler, so any issues with a scheduled task are handled at the level of the individual machine, not the whole cluster. Dask has extensive high-level collections APIs (e.g., dataframes, distributed arrays, etc), whereas Ray does not. Modin on the other hand runs on top of Dask or Ray. We can easily scale our pandas workflow through Modin by just adding a single line of code <code>import modin.pandas as pd</code> Dask DataFrame does not scale the entire pandas API but Modin attempts to parallelize as much of the pandas API as is possible. Dask DataFrame has row-based partitioning, similar to Spark. Modin is more of a column-store, which we inherited from modern database systems. Amongst developers Ray and Dask are more popular as they are old and mature.</p></li>
+</ol>
+<h3 id="use-cases-of-dask">Use Cases of Dask</h3>
+<p>Dask use cases are divided into two parts -</p>
+<ol style="list-style-type: decimal">
+<li>Dynamic task scheduling - which helps us to optimize our computations.</li>
+<li>“Big Data” collections - like parallel arrays and dataframes to handle large datasets.</li>
+</ol>
+<p>Dask collections are used to create <code>Task Graph</code> which is nothing but the structure of our data processing tasks. It is a visual representation of our tasks. Dask schedulers executes this task graph.</p>
+<p>Dask uses parallel programming to execute the tasks. Parallel programming means to execute multiple task at the same time. This way we can properly utlize our resources and finish multiple steps simultaneously.</p>
+<p>Let's see some of the data collections provided by Dask.</p>
+<ol style="list-style-type: decimal">
+<li><code>dask.array</code> - It uses the Numpy interface and cuts down the large array into smaller ones so that we can compute on arrays larger than our system's memory.</li>
+<li><code>dask.bag</code> - It provides operations like map, filter, fold, and groupby on collections of generic Python objects.</li>
+<li><code>dask.dataframe</code> - distributed dataframes like pandas. It is a large parallel dataframe made of many smaller dataframes.</li>
+</ol>
+<h3 id="installation">Installation</h3>
+<p>Dask can be installed using following command -</p>
+<p><code>pip install dask[complete]</code></p>
+<p>Let's see some examples of parallel computing using this library. <code>Dask.delayed</code> is used to achieve parallelism in our code. It delays function calls into a task graph with dependencies.</p>
+<pre><code>import time
+import random
+
+def profit(x,y):
+    time.sleep(random.random())
+    return x + y
+
+def loss(x,y):
+    time.sleep(random.random())
+    return x - y
+
+def total(x, y):
+    time.sleep(random.random())
+    return x + y
+
+%%time
+x = profit(45,10)
+y = loss(20,15)
+z = total(x, y)
+z</code></pre>
+<p>Output will be -</p>
+<pre><code>CPU times: user 1.33 ms, sys: 2.16 ms, total: 3.49 ms
+Wall time: 1.29 s
+
+60</code></pre>
+<p>These functions will run sequencely one after another, though they are not dependent on each other. So we can run them parallely to save time.</p>
+<pre><code>import dask
+profit = dask.delayed(profit)
+loss = dask.delayed(loss)
+total = dask.delayed(total)
+
+%%time
+x = profit(45,10)
+y = loss(20,15)
+z = total(x, y)
+z</code></pre>
+<p>Output will be -</p>
+<pre><code>CPU times: user 903 µs, sys: 0 ns, total: 903 µs
+Wall time: 557 µs
+
+Delayed(&#39;total-b0bcbf09-79e4-4dfb-9b91-0f69af46f759&#39;)</code></pre>
+<p>Even in this small example also we can see the improvement of running time. We can also visualize the task graph like this -</p>
+<p><code>z.visualize(rankdir='LR')</code></p>
+<p>It will look something like this -</p>
+<p><a href="https://www.dropbox.com/s/f2bbk8gpmyqy125/Screenshot%202020-12-27%20at%2011.14.24%20PM.png?dl=0">task graph</a></p>
+<p>That's all for now. You should definitely try this library in your next project. Happy coding :)</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="http://twitter.com/darkguyy">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://github.com/anu0012">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; DevTales 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

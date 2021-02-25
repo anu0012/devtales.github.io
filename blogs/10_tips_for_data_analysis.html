@@ -56,10 +56,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Parallel computing in Python using Dask</h1>
-            <span class="meta">Category: Development
+            <h1>10 tips for data analysis</h1>
+            <span class="meta">Category: Data Science
               <br>
-              Subcategory: Programming
+              Subcategory: Data Analysis
               <br>
               Read Time: 10 Minutes
             </span>
@@ -74,7 +74,50 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          
+          <p>In this blog we'll discuss about few techniques while doing data analysis.</p>
+<h1 id="check-for-null-values">1. Check for null values</h1>
+<p>Once we read the dataset, we should always check for null values. Following line of code can be used for it:</p>
+<p><code>df.isnull().sum(axis=0)</code></p>
+<p>It gives the total number of null values for each column in the dataset.</p>
+<h1 id="check-for-duplicate-values">2. Check for duplicate values</h1>
+<p>We can check whether there are duplicate values in the dataset using the following command:</p>
+<p><code>df.duplicated().sum()</code></p>
+<p>It gives us the total number of duplicated rows. We can drop using following command:</p>
+<p><code>df.drop_duplicates(keep=False)</code></p>
+<h1 id="check-for-unique-values">3. Check for unique values</h1>
+<p>It is useful for categorical data. Number of unique values can be checked in a particular column using following code:</p>
+<p><code>df['column_name'].unique()</code></p>
+<h1 id="replacedrop-null-values">4. Replace/Drop Null values</h1>
+<p>Dealing with null values is also very important for data analysis. We can either remove the column if there are too many null values</p>
+<p><code>df['column_name'].dropna(inplace=True)</code></p>
+<p>or we can impute them with mean/median/mode.</p>
+<p><code>df['column'].fillna(df['column'].mean(),inplace=True)</code></p>
+<h1 id="correlation-matrix">5. Correlation Matrix</h1>
+<p>It gives us the information about the correlation between different features. Following command can be used for it:</p>
+<pre><code>import seaborn as sns
+corrmat = df.corr()
+f, ax = plt.subplots(figsize=(12, 9))
+sns.heatmap(corrmat, square=True);</code></pre>
+<p>We are using seaborn package to plot the matrix.</p>
+<h1 id="check-distribution-of-a-variable">6. Check distribution of a variable</h1>
+<p>We can also check for the distribution of a particular column. By plot we can understand whether the data is following a normal distribution or some other. Following is the command:</p>
+<pre><code>import seaborn as sns
+sns.distplot(df[&#39;column&#39;])</code></pre>
+<h1 id="check-datatypes-of-columns">7. Check datatypes of columns</h1>
+<p>We can check the datatype of columns in the data. It helps us to confirm whether data is having correct data type or not.</p>
+<p><code>df.dtypes</code></p>
+<h1 id="deal-with-datetime-columns">8. Deal with datetime columns</h1>
+<p>Many times we get dates in a column but not in datetime format. We can convert it into one by using following code:</p>
+<p><code>df[&quot;Date.of.Birth&quot;] = df['Date.of.Birth'].astype('datetime64[ns]')</code></p>
+<h1 id="value-count">9. Value count</h1>
+<p>We can check the frequency of different categories in a categorical column:</p>
+<p><code>df['column'].value_counts()</code></p>
+<h1 id="maxmin-value-of-a-column">10. Max/Min value of a column</h1>
+<p>We can find out the maximum and minimum values in a particular column using max() and min() command:</p>
+<p><code>df['column'].max()</code> <code>df['column'].max()</code></p>
+<p>You can checkout my sample notebook with all these commands in action with a dataset.</p>
+<p><a href="https://www.kaggle.com/anu0012/startup-funding-dataset-visualization">Jupyter Notebook</a></p>
+<p>That's it for now. Next time we'll try to find out some more tips and tricks for data analysis. :)</p>
         </div>
       </div>
     </div>

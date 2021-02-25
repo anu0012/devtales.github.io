@@ -1,11 +1,11 @@
 {
-    "title": "Clean Blog",
+    "title": "Dev Tales",
     "name": "startbootstrap-clean-blog",
     "version": "5.0.10",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
+    "description": "Dev Tales is a technical blog.",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,12 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/clean-blog",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://devtales.tech",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "Anurag Sharma",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog.git"
+        "url": "https://github.com/anu0012/devtales.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.15.1",
