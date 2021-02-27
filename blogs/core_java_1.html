@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DevTales</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">DevTales</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Core Java - Part 1</h1>
+            <span class="meta">Category: Development
+              <br>
+              Subcategory: Programming
+              <br>
+              Read Time: 10 Minutes
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Welcome to the first part of Core Java tutorials. In this series, we'll discuss the basics of Core Java with practical examples. So let's get started.</p>
+<p>Java is an Object-Oriented Programming Language(OOPS). Sun Microsystems developed it in 1995, which was later acquired by Oracle. It is secure and platform-independent, which means its compiled programs can be run on any operating system. We can run our Java programs on a wide variety of computers using a range of OS(macOS, Windows, Linux, etc.). This is possible because our Java program doesn't execute directly on our computers. It runs on a standardized hypothetical computer known as Java Virtual Machine(JVM). This JVM is implemented in our computer by a program called Java interpreter. Don't get confused by the terminology. We will discuss everything in detail. Let's start with these terms.</p>
+<ol style="list-style-type: decimal">
+<li>Java Virtual Machine(JVM) - It provides a runtime environment in which Java byte code can be executed.</li>
+<li>Java Compiler - It compiles the .java file into bytecode. Bytecodes are binary instructions for Java interpreter.</li>
+<li>Java Interpreter - It reads the bytecode and converts it into machine code.</li>
+</ol>
+<p><em>NOTE</em> - Java is platform-independent, but JVM is not. According to the OS, you need to install it into your machine.</p>
+<h3 id="compiling-a-java-program--">Compiling a Java Program -</h3>
+<p>The below command is used to compile a java program -</p>
+<p><code>javac test.java</code></p>
+<p><code>javac</code> is the compiler that compiles our program and creates a file with the extension <code>.class</code> The class file contains bytecodes that are binary instructions for Java interpreter.</p>
+<h3 id="to-run-application-program--">To run application program -</h3>
+<p>Below command is used to run a java program -</p>
+<p><code>java test</code></p>
+<ul>
+<li>A Java program is a collection of one or more classes. There is at least one class in every program.</li>
+<li>A Java program file must be saved with the <code>.java</code> extension.</li>
+<li>We must save the program file with the same name as that of the class defined within it.</li>
+<li>We must put the code for each public class in a separate file.(There can be only one public class in a file)</li>
+</ul>
+<p>We will discuss what a class is and what is public in this series's later parts.</p>
+<h3 id="variables">Variables</h3>
+<p>A variable is known as a named value holder in primary memory. When a variable is declared, the compiler is able to check that it is not being used in a manner or context that is inappropriate to its type(Type checking).</p>
+<p>example - <code>int x = 10;</code> Here x is a variable of integer type. We'll discuss different data types later.</p>
+<h3 id="variables-names">Variables Names</h3>
+<p>The name we choose for a variable is called an identifier, and an identifier can be of any length, although it must begin with an alphabet and uppercase. The rest of the identifier can include digits also. Operators and spaces are not allowed in identifiers. Java variables are case sensitive, which means <code>name</code> and <code>NAME</code> are two different identifiers.</p>
+<p>We can't use Java keywords as a name for something. Keywords are an essential part of the language and are meant for specific purposes.</p>
+<p>Below are some examples of valid identifiers -</p>
+<pre><code>max, Max, MAX
+ab$123
+$ab_123
+_abcd</code></pre>
+<p>Below are some examples of invalid identifiers -</p>
+<pre><code>ab+cd
+ab-cd
+ab@cd
+ab cd
+123abcd
+while
+final</code></pre>
+<p>The last two <code>while and final</code> are reserved keywords.</p>
+<p>In general, we follow camel case notation for variables, class, or method names in Java. Below is the example -</p>
+<p>HelloWorld, calculateTotal, findMyAge().</p>
+<p>That's all for now for this part. We'll continue in the next part with DataTypes, Type conversion, and more. Till then, happy coding :)</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="http://twitter.com/darkguyy" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://github.com/anu0012" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; DevTales 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

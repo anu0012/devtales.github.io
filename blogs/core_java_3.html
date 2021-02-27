@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DevTales</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">DevTales</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Core Java - Part 3</h1>
+            <span class="meta">Category: Development
+              <br>
+              Subcategory: Programming
+              <br>
+              Read Time: 10 Minutes
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Welcome to the third part of our Core Java series. In the last part, we discussed about different expression, datatypes and operators. If you are new, please checkout the previous parts. Let's discuss some more aspects of Java Language.</p>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<p>These statements are formed using boolean expressions and they are used to alter the sequence of execution of our code. It follows below syntax -</p>
+<pre><code>if (boolean expression){
+    statement 1;
+}
+else{
+    statement 2;
+}</code></pre>
+<p><code>else</code> part is optional. It will execute when if condition is false. Let's see one example -</p>
+<pre><code>int a = 2;
+if(a == 4)
+    System.out.println(&quot;X&quot;)
+else
+    System.out.println(&quot;Y&quot;)</code></pre>
+<p>Output of this code is <code>Y</code> because the if condition is false. One thing to note here is that just like for mathematical operations we use arithmatic operators, for comparison we use <code>relational operators</code>. These are <code>&lt;, &lt;=, &gt;=, ==, !=</code>. These are used to compare two operands and they return a logical value that may be either true or false. In our example, we used <code>==</code> to check whether the value of a is equal to 4 or not. <code>==</code> and <code>=</code> are different. One is used for comparison and other one is used for value assignment.</p>
+<p>We can use multiple <code>if-else</code> conditions in our code. Condition within a conditional statement is called <code>nested conditional statements</code>.</p>
+<p>Apart from these <code>relational operators</code> there are <code>Boolean Operators</code> also which can be used in Java. These are used to combine two or more conditional statements. These are -</p>
+<pre><code>&amp;&amp; - AND
+|| - OR
+! - NOT</code></pre>
+<p>For <code>&amp;&amp;</code> both conditions must be true. For <code>||</code> one of the two conditions is sufficient for the statement to be true. <code>!</code> is counterpart(!true == false).</p>
+<p>example -</p>
+<pre><code>int a = 1, b = 2;
+if(a&gt;0 &amp;&amp; b&gt;3)
+    System.out.println(&quot;X&quot;)
+else
+    System.out.println(&quot;Y&quot;)</code></pre>
+<p>Output: Y</p>
+<p><strong>NOTE</strong> - In case of multiple boolean operators in a sentence, the precedence order will be NOT &gt; AND &gt; OR.</p>
+<h3 id="switch-statement">Switch Statement</h3>
+<p>It is another way of handling conditions in your code. It follows the below syntax -</p>
+<pre><code>switch(integer or string expression){
+    case value 1:
+                statement...
+                break
+    case value 2:
+                statement...
+                break
+                .
+                .
+                .
+                .
+    case default:
+                statement...
+} </code></pre>
+<p>We can use default anywhere and it is optional. But if the location of default is changed from last then we have to use break statement there also. Switch only takes integer or string expressions. Long type will give compile time error.</p>
+<h3 id="ternary-operatorconditional-operator">Ternary Operator/Conditional Operator</h3>
+<p>Ternary operators are another alternative to <code>if-else</code> and they can be written with less lines of code. It is called ternary because it has three arguments. It follows the below syntax.</p>
+<p><code>variable = (boolean expression)?true-part:false-part;</code></p>
+<p>e.g.</p>
+<pre><code>if (a&gt;b)
+    max = a;
+else
+    max = b;</code></pre>
+<p>This code is to get the max of two numbers using <code>if-else</code>. Now see its logic in ternary operator -</p>
+<p><code>max = (a&gt;b)?a:b;</code></p>
+<p>That's it. Only one line of code :)</p>
+<h3 id="iterationloops-in-java">Iteration(Loops) in Java</h3>
+<p>Loop means repeatedly execution of a statement. There are three types of loops we can use in Java. Let's see them one by one.</p>
+<ol style="list-style-type: decimal">
+<li>while loop -</li>
+</ol>
+<pre><code>while(boolean-exp){
+    statement;
+}</code></pre>
+<p>It takes a boolean exp as argument and executes the code till that condition becomes false.</p>
+<p>e.g.</p>
+<pre><code>int a = 2;
+while(a&gt;0)
+    a -= 1;</code></pre>
+<p>This code will run two times and each time value of a will reduce to 1. As soon as it reaches value 0, the loop will terminate.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>for loop -</li>
+</ol>
+<pre><code>for(initialization part; condition; action part){
+    statement;
+}</code></pre>
+<p>In for loop, we put a initial value, a boolean condition to be checked and an action part(how the value will change after each iteration). We can write multiple statements in the initialization part or in the action part by separating them with a comma(,). Multiple Conditions are always combined by boolean operator.</p>
+<p>e.g.</p>
+<pre><code>int sum = 0;
+for(int i=0; i&lt;=10, i++)
+    sum += i;
+System.out.println(sum);</code></pre>
+<p>Output: 55</p>
+<p>All these three parts of for loop are optional. If we remove all of them, then we'll get an infinite loop that will not stop unless you give a break condition or forcefully close your program.</p>
+<pre><code>for(;;){
+    if(condition)
+        break;
+}</code></pre>
+<p><code>Break</code> statement is used to skip remaining statements of the loop and shift the control outside the loop.</p>
+<pre><code>for(;;){
+    statement;      // some code
+    break;
+    statement;      // some more code
+}</code></pre>
+<p>The above example will throw a compile time error because <code>unreachable code is not allowed in Java</code>.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>do...while loop</li>
+</ol>
+<pre><code>do{
+    statement;  //some code
+}while(boolean-exp);</code></pre>
+<p>It is also like a while loop but the only difference is that it run <code>at least once</code> before checking the boolean expression.</p>
+<p>Just like nested conditional, we can put a loop inside another loop statements and that is called a <code>nested loop</code>.</p>
+<p>So far we learned a lot of fundamental topics about Java. Now it's your time to try out these topics. Try to make some small-small programs to better grasp these topics. I'll see you in the next part. Till then happy coding :)</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="http://twitter.com/darkguyy" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://github.com/anu0012" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; DevTales 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
