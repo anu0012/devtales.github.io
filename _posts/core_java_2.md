@@ -1,0 +1,203 @@
+<b>Title:</b> Core Java - Part 2
+<b>Author:</b> Anurag Sharma
+
+<b>Track Category:</b> Development
+<b>Subcategory:</b> Programming
+<b>Tags:</b> Java, Language, Tools and Libraries
+
+<b>Read Time:</b>  10 min
+
+[Banner Image](https://www.dropbox.com/s/622zq50qi1h6rcl/markus-spiske-qjnAnF0jIGk-unsplash.jpg?dl=0)
+
+# Content
+
+Welcome to the second part of our Core Java series. In the last part, we discussed about history of Java, it's environment, how we can compile/run a Java program and about variables. If you are new, please checkout the previous parts.
+Let's discuss some more aspects of Java Language.
+
+### Constants 
+
+If a variable value is fixed and can't be changed, it is called a constant. In Java, we use `final` keyword to define a constant.
+
+`final int MAX = 10000;`
+
+This is used when we want to make sure that the value of a variable must not be changed during the runtime of a program.
+
+### Literals
+
+Explicit data values that appear in a program are called literals.
+
+e.g. `int number = 25;`
+
+Here number is `variable` and 25 is `literal`.
+
+### Comments
+
+Comments are non-executable statements that are ignored by the compiler. They are used just to increase the readability of the program.
+
+`//` is used for single line comment.
+
+`// this is a single line comment comment`
+
+`/* */` is used for multiline comment.
+
+```
+/* This
+is 
+a 
+multiline
+comment
+*/
+```
+
+We can declare a variable anywhere in the Java program just before it is used.
+We can spread a single declaration over several lines. For e.g.
+
+```
+int height = 178,
+weight = 60,
+age = 25;
+```
+
+### Expression
+
+An expression is known as a valid combination of operands and operators. There are two types of expressions - 
+
+1. Constant Expression - It has all of the operands are either literals or constants. It is evaluated at compile time(when we compile the code using Javac).
+
+e.g. 
+2 + 3
+10 * 40 + 4
+int a = 10 + 20;
+
+2. Variable Expression - If any of the operand is a variable, it becomes variable expression. It is evaluated at runtime(when we run the compiled code).
+
+e.g. 
+a + b
+a * 10 + b
+int a = b;
+
+### Datatypes
+
+Datatypes are used to store different types of data into memory. There are 8 primitive datatypes within Java. I've clubbed them into four parts. Let's discuss them one by one.
+
+1. Integer Datatype - There are 4 datatypes that can be used to store integer values. All of them are signed. Unlike C/C++, in Java we don't have unsigned datatypes.
+
+| Datatype | Value Range               | Size    | Default Value |
+|----------|---------------------------|---------|---------------|
+| byte     | -128 to 127               | 1 byte  | 0             |
+| short    | -32768 to 32767           | 2 bytes | 0             |
+| int      | -2147483648 to 2147483647 | 4 bytes | 0             |
+| long     | -2^63 to 2^63-1           | 8 bytes | 0L            |
+
+2. Floating Point Datatypes - A floating point variable can represent a very wide range of values but with a fixed number of digits of accuracy.
+
+| Datatype | Value Range | Size    | Default Value |
+|----------|-------------|---------|---------------|
+| float    | +- 3.4E38   | 4 bytes | 0.0f          |
+| double   | +- 1.7E208  | 8 bytes | 0.0d          |
+
+Flaoating point literals are treated as double by default in Java so we need to use suffix F/f which means
+
+`float a = 1.2;` will give error, whereas `double a = 1.2;` or `flaot a = 1.2f;` is valid.
+
+3. Character Datatype - It takes size of 2 bytes and range from 0 to 2^16-1. A `char` type variable can be used to hold a single character.
+
+e.g. `char ch = 'A';`
+
+Alternatively we can also provide ASCII values. 
+
+e.g. `char ch = 65;` 65 is ASCII value of A.
+
+4. Boolean Datatype - A `boolean` type variable can be used to hold logical value either `true` or `false`.
+
+e.g. `boolean pass = true;`
+
+### Datatype Conversion 
+
+**Widening** of a datatype is done when we assign a smaller type to larger type(i.e. short to int)
+
+example - 
+
+```
+int a = 25;
+double b = 3.14;
+b = a;
+```
+
+**Narrowing** on the other hand is opposite, where we assign a larger datatypes to smaller datatypes(i.e double to float). By default, it is not allowed by Java language and leads to compile time error. But by doing explicit typecasting we can assign larger type to smaller one. 
+
+example - 
+```
+int a = 25;
+double b = 3.14;
+a = b;				// leads to error
+a = (int)b;			// ok
+```
+
+### Operators
+
+1. Arithmatic Operators - Java supports many arithmatic operators(`+,-,*,/,%,++,--`) for all numeric datatypes. `++` is increament opertor which increases the value by one. `--` is a decrement operator which decreases the value by 1.
+
+2. Shortcut Operators - `+=, -=, *=, /=, %=` They are used to reduce the length of expression.
+
+e.g. a = a + 2 or a += 2 both are same.
+
+3. Bitwise Operators - These operators are used to manipulate individual bits of a variable. Some of them are as follows - 
+
+- Bitwise left shift operator: This operator is used to shift individual bits of a variable towards left by specified number of positions and it fills the vacant position with 0.
+
+`a = a << n;` or `a = a * 2^n`
+
+Bits operation are faster than arithmatic.
+
+e.g. 
+
+```
+int a = 2;
+a = a << 4;
+```
+
+Output : 32
+
+- `AND(&), OR(|), XOR(^), NOT(~)` are some other bitwise operators. For more details checkout [this](https://en.wikipedia.org/wiki/Bitwise_operation).
+
+Now we have learned about some aspects of Java language. Let's start by installing Java into our machine and running our first program.
+
+### Installation
+
+Goto `https://java.com/en/download/` and download the Java development toolkit(JDK) based on your OS.
+
+After installation, set the path variable. 
+
+For windows user, go to `System Properties` then `Environment Variables`. In system variable go to path and enter the path to the bin folder inside your JDK in the variable value. Click OK.
+
+You can confirm that you have installed Java by opening terminal and running `javac` command.
+
+### Run your first Java program
+
+Open any text editor(i.e. Sublime Text, VSCode, Atom, Eclipse, IntelliJ IDEA) and write the below code - 
+
+```
+class Demo{
+	public static void main(String args[]){
+		int x = 1, y = 2, sum;
+		sum = x + y;
+		System.out.println("Total is " + sum); 
+	}
+}
+```
+
+Let's go through each aspect of this code. First we begin with defining a class. Then we defined a main method. 
+
+void - specifies that the method doesn't return any result to the calling environment.
+
+public - specifies that the method is accessible from outside the class.
+
+static - specifies that the method can be called without creating an object of the class.
+
+String args[] - while running a program at the command prompt we can pass some arguments to it. This array of Strings is used to hold the arguments provided at the command prompt.
+
+Now just save this file as Demo.java
+Goto terminal and run this command `javac Demo.java` to compile the code. It'll create a class file. Now after this run `java Demo` command and it'll show the output in the terminal.
+
+That's it! You have run your first Java program. Now it's your turn to utilize all that you have learned so far. We'll meet in the next part. Till then happy coding :) 

@@ -6,10 +6,10 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Devtales
 
 # Your name to show in the footer
-author: Some Person
+author: darkguyy
 
 # --- List of links in the navigation bar --- #
 
@@ -41,16 +41,16 @@ round-avatar: true
 social-network-links:
   email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  medium: yourname
+  # facebook: deanattali
+  github: anu0012
+  # twitter: daattali
+  patreon: anu0012
+  # youtube: c/daattali
+  medium: darkguyy
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: anu0012
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
+  stackoverflow: "6129389/anurag-sharma"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
@@ -64,7 +64,7 @@ social-network-links:
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 #  discord: invite/invite_code or users/userid 
-#  kaggle: yourname
+  kaggle: anu0012
 #  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
@@ -75,14 +75,14 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+  github: true
+  kaggle: true
   linkedin: true
   vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "devtales.com"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -100,7 +100,7 @@ post_search: true
 edit_page_button: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "python, programming, code, coding, data science, machine learning, developer"
 
 # --- Colours / background image --- #
 

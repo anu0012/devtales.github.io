@@ -1,0 +1,192 @@
+<b>Title:</b> Core Java - Part 3
+<b>Author:</b> Anurag Sharma
+
+<b>Track Category:</b> Development
+<b>Subcategory:</b> Programming
+<b>Tags:</b> Java, Language, Tools and Libraries
+
+<b>Read Time:</b>  10 min
+
+[Banner Image](https://www.dropbox.com/s/622zq50qi1h6rcl/markus-spiske-qjnAnF0jIGk-unsplash.jpg?dl=0)
+
+# Content
+
+Welcome to the third part of our Core Java series. In the last part, we discussed about different expression, datatypes and operators. If you are new, please checkout the previous parts.
+Let's discuss some more aspects of Java Language.
+
+### Conditional Statements
+
+These statements are formed using boolean expressions and they are used to alter the sequence of execution of our code. It follows below syntax - 
+
+```
+if (boolean expression){
+	statement 1;
+}
+else{
+	statement 2;
+}
+```
+
+`else` part is optional. It will execute when if condition is false. Let's see one example - 
+
+```
+int a = 2;
+if(a == 4)
+	System.out.println("X")
+else
+	System.out.println("Y")
+```
+
+Output of this code is `Y` because the if condition is false. One thing to note here is that just like for mathematical operations we use arithmatic operators, for comparison we use `relational operators`. These are `<, <=, >=, ==, !=`. These are used to compare two operands and they return a logical value that may be either true or false. In our example, we used `==` to check whether the value of a is equal to 4 or not. `==` and `=` are different. One is used for comparison and other one is used for value assignment.
+
+We can use multiple `if-else` conditions in our code. Condition within a conditional statement is called `nested conditional statements`.
+
+Apart from these `relational operators` there are `Boolean Operators` also which can be used in Java. These are used to combine two or more conditional statements. These are - 
+
+```
+&& - AND
+|| - OR
+! - NOT
+```
+
+For `&&` both conditions must be true. For `||` one of the two conditions is sufficient for the statement to be true. `!` is counterpart(!true == false).
+
+example - 
+
+```
+int a = 1, b = 2;
+if(a>0 && b>3)
+	System.out.println("X")
+else
+	System.out.println("Y")
+```
+
+Output: Y
+
+**NOTE** - In case of multiple boolean operators in a sentence, the precedence order will be NOT > AND > OR.
+
+### Switch Statement
+
+It is another way of handling conditions in your code. It follows the below syntax - 
+
+```
+switch(integer or string expression){
+	case value 1:
+				statement...
+				break
+	case value 2:
+				statement...
+				break
+				.
+				.
+				.
+				.
+	case default:
+				statement...
+} 
+```
+
+We can use default anywhere and it is optional. But if the location of default is changed from last then we have to use break statement there also.
+Switch only takes integer or string expressions. Long type will give compile time error.
+
+### Ternary Operator/Conditional Operator
+
+Ternary operators are another alternative to `if-else` and they can be written with less lines of code. It is called ternary because it has three arguments. It follows the below syntax.
+
+`variable = (boolean expression)?true-part:false-part;`
+
+e.g. 
+
+```
+if (a>b)
+	max = a;
+else
+	max = b;
+```
+
+This code is to get the max of two numbers using `if-else`. Now see its logic in ternary operator - 
+
+`max = (a>b)?a:b;`
+
+That's it. Only one line of code :)
+
+### Iteration(Loops) in Java
+
+Loop means repeatedly execution of a statement. There are three types of loops we can use in Java. Let's see them one by one.
+
+1. while loop - 
+
+```
+while(boolean-exp){
+	statement;
+}
+```
+
+It takes a boolean exp as argument and executes the code till that condition becomes false.
+
+e.g.
+
+```
+int a = 2;
+while(a>0)
+	a -= 1;
+```
+
+This code will run two times and each time value of a will reduce to 1. As soon as it reaches value 0, the loop will terminate.
+
+2. for loop -
+
+```
+for(initialization part; condition; action part){
+	statement;
+}
+```
+
+In for loop, we put a initial value, a boolean condition to be checked and an action part(how the value will change after each iteration).
+We can write multiple statements in the initialization part or in the action part by separating them with a comma(,). Multiple Conditions are always combined by boolean operator.
+
+e.g.
+
+```
+int sum = 0;
+for(int i=0; i<=10, i++)
+	sum += i;
+System.out.println(sum);
+```
+
+Output: 55
+
+All these three parts of for loop are optional. If we remove all of them, then we'll get an infinite loop that will not stop unless you give a break condition or forcefully close your program.
+
+```
+for(;;){
+	if(condition)
+		break;
+}
+```
+
+`Break` statement is used to skip remaining statements of the loop and shift the control outside the loop. 
+
+```
+for(;;){
+	statement;		// some code
+	break;
+	statement;		// some more code
+}
+```
+
+The above example will throw a compile time error because `unreachable code is not allowed in Java`.
+
+3. do...while loop
+
+```
+do{
+	statement;	//some code
+}while(boolean-exp);
+```
+
+It is also like a while loop but the only difference is that it run `at least once` before checking the boolean expression.
+
+Just like nested conditional, we can put a loop inside another loop statements and that is called a `nested loop`.
+
+So far we learned a lot of fundamental topics about Java. Now it's your time to try out these topics. Try to make some small-small programs to better grasp these topics. I'll see you in the next part. Till then happy coding :)
