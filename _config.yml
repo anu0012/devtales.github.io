@@ -17,6 +17,7 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Self Learning: "https://github.com/anu0012/awesome-computer-science-opportunities"
+    - Books: "#"
   Author's home: "https://linktr.ee/anu0012"
 
 # --- Logo --- #
