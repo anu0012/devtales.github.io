@@ -136,10 +136,14 @@ footer-hover-col: "#0085A1"
 #site-js:
 #  - "/assets/js/custom-script.js"
 
+# Advertisements
+
+adsense: "true"
+
 # --- Web Analytics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "GTM-WJG5FBC"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
 #google_analytics: ""
@@ -148,7 +152,7 @@ footer-hover-col: "#0085A1"
 #cloudflare_analytics: ""
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-WJG5FBC"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
