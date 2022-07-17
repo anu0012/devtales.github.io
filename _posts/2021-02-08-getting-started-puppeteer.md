@@ -1,15 +1,10 @@
-<b>Title:</b> Getting started with Puppeteer
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Testing
-<b>Tags:</b> Puppeteer, Tools and Libraries
-
-<b>Read Time:</b>  5 min
-
-[Banner Image](https://www.dropbox.com/s/8s767jjsjkvje1z/software-762486_1280.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Getting started with Puppeteer
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Puppeteer, Tools and Libraries]
+---
 
 We all must have heard about Selenium/Web Driver for automation testing. Selenium is focused on cross browser automation. In this article we'll discuss about another library for automation. Puppeteer is mainly focused on testing for Chromium. It’s a very useful tool for automation, testing and scraping web pages. Puppeteer is a Node.js library which provides a high-level API to control Chrome or Chromium over the DevTools protocol. It runs headless by default which means no need to open the browser to use it. This configuration can be changed. Pupperteer comes bundled with the Chromium version it works best with.
 

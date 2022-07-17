@@ -1,15 +1,10 @@
-<b>Title:</b> Handle text data using NLTK
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Data Science
-<b>Subcategory:</b> NLP
-<b>Tags:</b> Python, Language, Tools and Libraries
-
-<b>Read Time:</b>  10 min
-
-[Banner Image](https://www.dropbox.com/s/622zq50qi1h6rcl/markus-spiske-qjnAnF0jIGk-unsplash.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Handle text data using NLTK
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Python, NLP, Tools and Libraries]
+---
 
 NLTK is a python library which is used to process text data. In Natural Lanuguage Processing(NLP) we deal with human language and before feeding such data into our machine learning model we need to do some processing like removing punctuations, extra spaces etc. NLTK library is very handy and useful to perform such tasks. In this tutorial, we'll see how we can use this library to process our data. So let's get started.
 

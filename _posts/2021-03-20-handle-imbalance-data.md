@@ -1,15 +1,10 @@
-<b>Title:</b> How to handle imbalanced dataset
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Data Science
-<b>Subcategory:</b> Data Analysis
-<b>Tags:</b> Machine Learning, Python, Tools and Libraries
-
-<b>Read Time:</b>  5 min
-
-[Banner Image](https://www.dropbox.com/s/fniyskxo9ia4uuh/data-analysis.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: How to handle imbalanced dataset
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Machine Learning, Python, Tools and Libraries]
+---
 
 Many times we face problem of imbalanced classes in the dataset where some classes have majority of observations and rest have only a few observations. Class imbalance can be found in disease diagnosis like Cancer detection, fraud detection or spam filtering. In this article, we'll see few techniques which can be used to deal with imbalanced datasets. 
 

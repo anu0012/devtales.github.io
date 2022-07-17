@@ -1,15 +1,10 @@
-<b>Title:</b> Getting started with Firebase Cloud Firestore using Python
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Back-end
-<b>Tags:</b> Firebase, Python, Tools and Libraries
-
-<b>Read Time:</b>  10 min
-
-[Banner Image](https://www.dropbox.com/s/94qhcxyhllfj2xf/markus-spiske-466ENaLuhLY-unsplash.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Getting started with Firebase Cloud Firestore using Python
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Firebase, Python, Tools and Libraries]
+---
 
 Firebase is a mobile platform which can be used to quickly develop high-quality apps and manage its analytics. It is acquired by Google in 2014. 
 It provides a lot of features to developers some of these are following:

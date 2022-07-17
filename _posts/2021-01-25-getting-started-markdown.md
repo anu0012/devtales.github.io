@@ -1,15 +1,10 @@
-<b>Title:</b> Getting started with Markdown
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Document
-<b>Tags:</b> Markdown, Tools and Libraries
-
-<b>Read Time:</b>  5 min
-
-[Banner Image](https://www.dropbox.com/s/07sfl1merwu7l7w/ilya-pavlov-OqtafYT5kTw-unsplash.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Getting started with Markdown
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Markdown, Tools and Libraries]
+---
 
 Markdown is a markup language which has a plain text formatting syntax. John Gruber developed the Markdown language in 2004 in collaboration with Aaron Swartz on the syntax, with the aim of enabling people to write using an easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid HTML. With it we can quickly write structured content for the web, and convert it to clean, structured HTML. Markdown is used by many popular platforms like Github, Jekyll etc. In Github, README files use this format. Markdown is used to format readme files, for writing messages in online discussion forums, and to create rich text with a plain text editor. In this post we'll see how we can use Markdown to write documents. 
 

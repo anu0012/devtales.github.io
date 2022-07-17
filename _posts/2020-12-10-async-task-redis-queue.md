@@ -1,15 +1,10 @@
-<b>Title:</b> Asynchronous Tasks with Redis Queue
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Programming
-<b>Tags:</b> Python, Redis Queue, Language, Tools and Libraries
-
-<b>Read Time:</b>  15 min
-
-[Banner Image](https://www.dropbox.com/s/622zq50qi1h6rcl/markus-spiske-qjnAnF0jIGk-unsplash.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Asynchronous Tasks with Redis Queue
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Python, Redis Queue, Language, Tools and Libraries]
+---
 
 Many of us might have faced some problem while handling long-running tasks in our web application. It could be uploading an image file, applying some filter in it and show it on the screen once done, or It could be to related to report generation from an uploaded excel file. In either case, if the task is taking significant amount of time, you can't hold the UI and let the user wait for long. The solution is to run such task in the background and inform the user once they are done either using a notification or by sending an email. We'll see how we can do that using Redis Queue. For this tutorial, we'll be using Python Flask framework as backend and [Redis Queue](https://python-rq.org/) library for queueing jobs and processing them in the background with the help of workers. Don't worry I'll explain all the terminologies like workers, queues etc. in the later part of the blog.
 

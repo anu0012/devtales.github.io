@@ -1,15 +1,10 @@
-<b>Title:</b> Getting started with MongoDB
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Database
-<b>Tags:</b> MongoDB, Tools and Libraries
-
-<b>Read Time:</b>  5 min
-
-[Banner Image](https://www.dropbox.com/s/j5gfbp639bz7212/database-schema-1895779_1280.png?dl=0)
-
-# Content
+---
+layout: post
+title: Getting started with MongoDB
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [MongoDB, Tools and Libraries]
+---
 
 MongoDB is a general purpose, distributed database built for modern application developers and for the cloud era. It is an open-source database and one of the most popular NoSQL database. MongoDB is easy to scale. It is a document database, which means it stores data in JSON-like documents. It supports arrays and nested objects as values and allows for flexible and dynamic schemas. It has a powerful query language that allows us to filter and sort by any field, irrespective of how nested it may be within a document. MongoDB supports for aggregations and other modern use-cases such as geo-based search, graph search, and text search. It supports all the facilities of relation databases like ACID transactions, joins in queries and more. In this article we'll try to understand the basics of MongoDB. Let's get started.
 

@@ -16,9 +16,8 @@ author: darkguyy
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Beautiful Jekyll: "https://github.com/anu0012/awesome-computer-science-opportunities"
+  Author's home: "https://linktr.ee/anu0012"
 
 # --- Logo --- #
 
@@ -40,11 +39,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   # facebook: deanattali
   github: anu0012
   # twitter: daattali
-  patreon: anu0012
+  # patreon: darkguyy
   # youtube: c/daattali
   medium: darkguyy
 #  reddit: yourname

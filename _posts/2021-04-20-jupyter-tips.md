@@ -1,15 +1,10 @@
-<b>Title:</b> Tips and Tricks for Jupyter Notebook
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Data Science
-<b>Subcategory:</b> Data Analysis
-<b>Tags:</b> Machine Learning, Python, Jupyter
-
-<b>Read Time:</b>  5 min
-
-[Banner Image](https://www.dropbox.com/s/ntdyvfz2x1dqr4z/machine-learning.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Tips and Tricks for Jupyter Notebook
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Machine Learning, Python, Jupyter]
+---
 
 Jupyter notebooks are an interactive medium for doing data analysis. It is very popular amongst data science community. For a beginner it may be very simple and easy way to start but it has a lot more to offer.  In this blog, we'll discuss a very powerful interactive computing environment Jupyter Notebook that helps us to create documents with live code, interactive plots, markdown text, images, etc. Project Jupyter is a non-profit, open-source software. It came out of the IPython project in 2014, as it evolved to support interactive data science and scientific computing in all programming languages. Jupyter is developed on Github in the open, unanimously from the Jupyter community.
 

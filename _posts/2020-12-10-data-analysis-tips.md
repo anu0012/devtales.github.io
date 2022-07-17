@@ -1,15 +1,10 @@
-<b>Title:</b> 10 tips for data analysis
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Data Science
-<b>Subcategory:</b> Data Analysis
-<b>Tags:</b> Machine Learning, Python, Pandas
-
-<b>Read Time:</b>  10 min
-
-[Banner Image](https://www.dropbox.com/s/fniyskxo9ia4uuh/data-analysis.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: 10 tips for data analysis
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Machine Learning, Python, Pandas]
+---
 
 In this blog we'll discuss about few techniques while doing data analysis.
 

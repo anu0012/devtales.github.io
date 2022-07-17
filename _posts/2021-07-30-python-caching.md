@@ -1,15 +1,10 @@
-<b>Title:</b> Caching in Python applications
-<b>Author:</b> Anurag Sharma
-
-<b>Track Category:</b> Development
-<b>Subcategory:</b> Programming
-<b>Tags:</b> Python, Language, Tools and Libraries
-
-<b>Read Time:</b>  10 min
-
-[Banner Image](https://www.dropbox.com/s/622zq50qi1h6rcl/markus-spiske-qjnAnF0jIGk-unsplash.jpg?dl=0)
-
-# Content
+---
+layout: post
+title: Caching in Python applications
+cover-img: /assets/img/path.jpg
+share-img: /assets/img/path.jpg
+tags: [Python, Caching, Development, Tools and Libraries]
+---
 
 In web application, many times we have to use the same data again and again or some calculations have to be performed again when we visit some page. If we recompute them again or access the data from some slow database it can hamper the performance of our application. To overcome this problem we can use `Caching` method. It may sound a fancy term but I am sure you must have used one or more of the following methods to achieve Caching. Let's discuss how we can implement it in our applications. In two ways we can store cache data - one at Client side and another at Server Side.
 
