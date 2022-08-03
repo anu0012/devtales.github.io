@@ -100,7 +100,7 @@ post_search: true
 edit_page_button: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "python, programming, code, coding, data science, machine learning, developer"
+keywords: "python, programming, code, coding, data science, machine learning, developer, javascript, java, web development"
 
 # --- Colours / background image --- #
 
@@ -143,7 +143,7 @@ adsense: "true"
 # --- Web Analytics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "GTM-WJG5FBC"
+gtag: "G-DNXZR8P1KV"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
 google_analytics: "G-DNXZR8P1KV"
