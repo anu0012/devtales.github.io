@@ -4,7 +4,7 @@ title: About me
 subtitle: why would you want to work with me?
 ---
 
-My name is Anurag. I have 3+ years of experience as a Full Stack Data Scientist. I've worked upon multiple end to end ML models and deployed them to production. Apart from ML, I've also worked on web developement. My tech stack includes:
+My name is Anurag. I have 3+ years of experience as a Full Stack Data Scientist. I've worked on multiple end-to-end ML models and deployed them to production. Apart from ML, I've also worked on web development. My tech stack includes:
 
 - Python
 - Flask
@@ -15,4 +15,4 @@ My name is Anurag. I have 3+ years of experience as a Full Stack Data Scientist.
 - Microsoft Azure
 - Google Cloud Platform
 - Apache Airflow
-- and more...
+- and more
