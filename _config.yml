@@ -138,7 +138,7 @@ footer-hover-col: "#0085A1"
 
 # Advertisements
 
-adsense: "true"
+# adsense: "true"
 
 # --- Web Analytics Section --- #
 
@@ -155,7 +155,7 @@ google_analytics: "G-DNXZR8P1KV"
 gtm: "GTM-WJG5FBC"
 
 # clicky
-# clicky: "true"
+clicky: "true"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
