@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Generative AI - Exploring the Capabilities and Use Cases
-cover-img: /assets/img/path.jpg
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/pic5.jpg
+share-img: /assets/img/pic5.jpg
 tags: [Data Science, Artificial Intelligence, GenAI]
 ---
-
-## Introduction
 
 Generative AI is an exciting field in artificial intelligence that involves training algorithms to generate data that is similar to the training dataset. Unlike other AI models that focus on classification or prediction, generative AI is concerned with creating new content. This content can include images, music, text, and even videos. In recent years, generative AI has gained significant attention for its ability to produce creative and original content. In this blog post, we will explore generative AI in detail and examine some of its use cases.
 

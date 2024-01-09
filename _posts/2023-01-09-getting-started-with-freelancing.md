@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Getting Started with Freelancing in Software Development
-cover-img: /assets/img/path.jpg
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/pic6.jpg
+share-img: /assets/img/pic6.jpg
 tags: [Freelancer, Freelancing, Jobs, Side Hustle, Software Development]
 ---
 
-**Introduction:**
 Freelancing in software development has emerged as a dynamic and rewarding career option, offering flexibility, autonomy, and the opportunity to work on diverse projects. As the demand for skilled developers continues to rise, freelancing provides a viable path for individuals to showcase their expertise and build a successful career. In this guide, we'll explore the world of freelancing in software development, delve into the step-by-step process of getting started, and review prominent platforms where freelancers can find exciting opportunities.
 
 **Step-by-Step Guide to Getting Started:**
