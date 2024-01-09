@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Generative AI - Exploring the Capabilities and Use Cases
-cover-img: /assets/img/pic5.jpg
-share-img: /assets/img/pic5.jpg
+cover-img: /assets/img/pic5.jpeg
+share-img: /assets/img/pic5.jpeg
 tags: [Data Science, Artificial Intelligence, GenAI]
 ---
 

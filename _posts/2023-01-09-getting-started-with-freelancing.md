@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Freelancing in Software Development
-cover-img: /assets/img/pic6.jpg
-share-img: /assets/img/pic6.jpg
+cover-img: /assets/img/pic6.jpeg
+share-img: /assets/img/pic6.jpeg
 tags: [Freelancer, Freelancing, Jobs, Side Hustle, Software Development]
 ---
 
